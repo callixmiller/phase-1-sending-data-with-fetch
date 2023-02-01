@@ -19,5 +19,5 @@ function submitData(name, email) {
 
 function addNewContact(newId){
     document.getElementsByTagName('body')[0].innerHTML = newId
-    document.body.append(message)
+    document.body.append(error)
 }
