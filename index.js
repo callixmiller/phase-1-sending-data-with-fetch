@@ -14,10 +14,10 @@ function submitData(name, email) {
     return fetch('http://localhost:3000/users', configObj)
         .then(res => res.json())
         .then(body => addNewContact(body.id))
-        .catch(error => document.querySelector('body').innerHTML = error)
+        .catch(message => document.querySelector('body').innerHTML = message)
 }
 
 function addNewContact(newId){
     document.getElementsByTagName('body')[0].innerHTML = newId
-    document.body.append(error)
+    document.body.append(message)
 }
